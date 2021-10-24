@@ -603,13 +603,6 @@ video {
   --tw-shadow: 0 0 #0000;
 }
 
-.inset-10 {
-  top: 2.5rem;
-  right: 2.5rem;
-  bottom: 2.5rem;
-  left: 2.5rem;
-}
-
 .m-4 {
   margin: 1rem;
 }
