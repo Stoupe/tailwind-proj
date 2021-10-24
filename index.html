@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Styled with Tailwind!</title>
+    <link rel="stylesheet" href="./build/styles.css" />
+    <script src="./build/main.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/4fd193562f.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="dark:bg-gray-800 dark:text-gray-100">
+    <nav
+      class="
+        flex
+        h-12
+        justify-between
+        items-center
+        dark:bg-gray-900
+        bg-gray-100
+        px-4
+      "
+    >
+      <h1
+        class="
+          text-lg
+          font-bold
+          bg-clip-text bg-gradient-to-r
+          from-pink-300
+          to-blue-500
+          dark:from-pink-500 dark:to-red-600
+          hover:text-transparent
+          transition-all
+        "
+      >
+        <a href="/">My Site</a>
+      </h1>
+      <div>
+        <a
+          class="
+            ml-4
+            border-b-2 border-opacity-0
+            hover:border-opacity-100
+            transition-all
+          "
+          href="/"
+          >home</a
+        >
+        <a
+          class="
+            ml-4
+            border-b-2 border-opacity-0
+            hover:border-opacity-100
+            transition-all
+          "
+          href="/"
+          >about</a
+        >
+        <a
+          class="
+            ml-4
+            border-b-2 border-opacity-0
+            hover:border-opacity-100
+            transition-all
+          "
+          href="/"
+          >contact</a
+        >
+        <button
+          id="dark-toggle"
+          class="
+            ml-4
+            bg-clip-text bg-gradient-to-r
+            from-pink-300
+            to-blue-500
+            dark:from-pink-500 dark:to-red-600
+            hover:text-transparent
+            transition-all
+          "
+        >
+          <i class="fa-solid fa-circle-half-stroke"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="grid">
+      <h1
+        class="
+          text-center text-5xl text-transparent
+          bg-gradient-to-r
+          from-pink-300
+          to-blue-500
+          dark:from-pink-500 dark:to-red-600
+          bg-clip-text
+          font-black
+          pt-4
+        "
+      >
+        Hello, World
+      </h1>
+      <div id="main-card" class="card">
+        <h2
+          class="
+            text-lg
+            font-semibold
+            mb-2
+            bg-gradient-to-tr
+            dark:from-red-600 dark:to-pink-600
+            from-pink-300
+            to-blue-300
+            p-2
+            pr-6
+            rounded-t-lg rounded-bl-lg rounded-br-[50px]
+            inline-block
+            text-white text-shadow-md
+          "
+        >
+          Card Title
+        </h2>
+        <p class="text-sm font-mono">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
+          voluptate pariatur, magnam eius non recusandae saepe qui
+          exercitationem amet tempore nisi sapiente dolor. Consequatur quaerat
+          molestias ex ducimus voluptatum earum.
+        </p>
+        <ul class="m-4 text-sm list-disc marker:text-blue-600">
+          <li>one</li>
+          <li class="selection:bg-red-300">two</li>
+          <li>three</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2
+          class="
+            text-lg
+            font-semibold
+            mb-2
+            bg-gradient-to-tr
+            dark:from-red-600 dark:to-pink-600
+            from-pink-300
+            to-blue-300
+            p-2
+            pr-6
+            rounded-t-lg rounded-bl-lg rounded-br-[50px]
+            inline-block
+            text-white text-shadow-md
+          "
+        >
+          Bookmarks
+        </h2>
+        <p class="text-sm font-mono">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe est,
+          mollitia quis quia consequatur tenetur exercitationem cupiditate sunt?
+          Amet aliquid accusamus exercitationem quasi beatae cumque. Asperiores
+          molestias facere explicabo temporibus!
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
