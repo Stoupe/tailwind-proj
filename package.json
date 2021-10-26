@@ -6,7 +6,10 @@
   "scripts": {
     "dev": "concurrently \"npm:tailwindcss\" \"npm:tsc\"",
     "tailwindcss": "tailwindcss -i ./src/styles.css -o ./build/styles.css --watch",
-    "tsc": "tsc --outDir build/ main.ts --watch"
+    "tsc": "tsc --outDir build/ main.ts --watch",
+    "prettier": "prettier --check .",
+    "prepare": "husky install",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +19,8 @@
   },
   "devDependencies": {
     "concurrently": "^6.3.0",
+    "husky": "^7.0.0",
+    "prettier": "^2.4.1",
     "tailwindcss-textshadow": "^2.1.3"
   }
 }
